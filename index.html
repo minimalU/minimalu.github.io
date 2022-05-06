@@ -1,0 +1,234 @@
+<!--
+<?php
+$message_sent = false;
+	if(isset($_POST['email']) && $_POST['email'] !=''){
+		
+		// validation
+		if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+			// submit the form
+		$userName = $_POST['name'];
+		$userEmail = $_POST['email'];
+		$messageSubject = $_POST['subject'];
+		$message = $_POST['message'];
+	
+		$to = "abc@gmail.com";
+		$body = "";
+	
+		$body .= "From: ".$userName. "\r\n";
+		$body .= "Email: ".$userEmail. "\r\n";
+		$body .= "Message: ".$message. "\r\n";
+	
+		mail($to,$messageSubject, $body);
+
+		$message_sent = true;
+
+		}
+		else {
+
+		}
+	}
+
+?>
+-->
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Yujung Park's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+	
+
+
+	
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/profile.jpg" alt="" /></span>
+							<h1 id="title">Yujung Park</h1>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+						<!--	<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
+							<li><a href="https://www.linkedin.com/in/yujung-park-259344114/" class="icon brands fa-linkedin"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/minimalU" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Yujung</strong>, </h2>
+								<p>Aspiring Software Development Engineer <br />
+									Software Engineering Technology Student at the Conestoga College.</p>
+							</header>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>Rescent Projects</p>
+
+							<div class="row">
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://github.com/minimalU/TheParks" target="_blank" class="image fit"><img src="images/thumb1.jpg" alt="TheParks" /></a>
+										<header>
+											<h3>Responsive Web Design </br> 
+												HTML, CSS, Bootstrap</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#portfolio" class="image fit"><img src="images/ComingSoon.jpg" alt="ComingSoon" /></a>
+										<header>
+											<h3>Web Application</br>
+											    C#, .NET, SQL</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://github.com/minimalU/Assembly-language" target="_blank" class="image fit"><img src="images/assembly.jpg" alt="circuit" /></a>
+										<header>
+											<h3>CPU circuit </br>
+												Assembly language
+											</h3>
+										</header>
+									</article>
+									<article class="item">
+										<a href="https://card-match-2420e.firebaseapp.com/" class="image fit"><img src="images/cardgame.jpg" alt="cardgame" /></a>
+										<header>
+											<h3>Match Game</br>
+												React, Firebase
+											</h3>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="https://github.com/minimalU/OOP" class="image fit"><img src="images/oop.jpg" alt="oop" /></a>
+										<header>
+											<h3>C++ OOP</br>
+											    Inheritance, Polymorphism, Overloading operators, Doxygen documentation
+											</h3>
+										</header>
+									</article>
+
+									<article class="item">
+										<a href="#portfolio" class="image fit"><img src="images/ComingSoon.jpg" alt="ComingSoon" /></a>
+										<header>
+											<h3>Wordle game clone</br>
+												React
+											</h3>
+										</header>
+									</article>
+
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a href="#" class="image featured"><img src="images/aboutMe.jpg" alt="" /></a>
+
+							<p>Software Engineering Student at Conestoga College, Waterloo, ON. Actively seeking internships!</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+							<!-- <p></p> -->
+							<form method="post" action="" method="POST">
+								<div class="row">
+									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: HTML5 UP</li><li>Edited by Yujung Park</li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
