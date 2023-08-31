@@ -1,244 +1,236 @@
-<!--
-<?php
-$message_sent = false;
-	if(isset($_POST['email']) && $_POST['email'] !=''){
-		
-		// validation
-		if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
-			// submit the form
-		$userName = $_POST['name'];
-		$userEmail = $_POST['email'];
-		$messageSubject = $_POST['subject'];
-		$message = $_POST['message'];
-	
-		$to = "abc@gmail.com";
-		$body = "";
-	
-		$body .= "From: ".$userName. "\r\n";
-		$body .= "Email: ".$userEmail. "\r\n";
-		$body .= "Message: ".$message. "\r\n";
-	
-		mail($to,$messageSubject, $body);
-
-		$message_sent = true;
-
-		}
-		else {
-
-		}
-	}
-
-?>
+<!-- 
+	Date: 2023-08-18
+	Description: portfolio webpage 2023 
+	References: startbootstrap.com
 -->
-<!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Yujung Park's Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
-	
 
-
-	
-		<!-- Header -->
-			<div id="header">
-
-				<div class="top">
-
-					<!-- Logo -->
-						<div id="logo">
-							<span class="image avatar48"><img src="images/profile.jpg" alt="" /></span>
-							<h1 id="title">Yujung Park</h1>
-						</div>
-
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Portfolio</span></a></li>
-								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-								<li><a href="#contact" id="contact-link"><span class="icon solid fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>KatePark2023-Index</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Custom Google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="assets/css/styles.css" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 fixed-top">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-gradient">KATE PARK</span></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+							<li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+							<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header-->
+            <header class="bg-warning">
+				<div class="jumbotron jumbotron-fluid text-dark text-center">
+					<div class="row text-center">
+						<h1 class="fw-bolder">Hello;</h1>
+						<h2 class="fs-3">Kate Park, Aspiring Software Developer</h2>
+					</div>
 				</div>
+            </header>
 
-				<div class="bottom">
 
-					<!-- Social Icons -->
-						<ul class="icons">
-						<!--	<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li> -->
-							<li><a href="https://www.linkedin.com/in/yujung-park-259344114/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-							<li><a href="https://github.com/minimalU" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						</ul>
+			<!-- Projects Section-->
+            <section id="project" class="py-5">
+                <div class="container px-5 mt-5 mb-5">
+                    <div class="text-center mb-5">
+                        <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
+                    </div>
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
 
-				</div>
+                            <!-- Project Card 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <a class="card-a" href="https://github.com/minimalU/2023SmartCityHackathon" target="_blank">
+									    <div class="d-flex align-items-center">
+										    <div class="p-5">
+											    <h2 class="fw-bolder">PRESCRIPTXN</h2>
+											    <p>Smart Cities Hackathon Finalist<br>- Python, Flask, mySQL, openAI API, JavaScript -<br>PRESCRIPTXN allows users to access patient-friendly prescription information that is AI-processed from FDA medication information. Users can easily check their medication information anytime, and can quickly access the clinic and receive their medication from the pharmacy using QR codes. </p>
+										    </div>
+										    <img class="prj-img" src="images/PrjPrescriptxn.jpg" alt="prescriptxn" />
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Project Card 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+									<a class="card-a" href="https://github.com/minimalU/2023UnityPractice" target="_blank">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Unity Practice</h2>
+											<p>Unity Practice Project<br>- C#, Unity -<br>The conveyor belt project is a Unity practice exercise involving the movement of a box object along the conveyor belt. The conveyor belt is designed to transfer the box object from one plate to the next, demonstrating the mechanics of object transportation.</p>
+                                        </div>
+                                        <img class="prj-img" src="images/UnityPractice230729.gif" alt="Unity230729" />
+                                    </div>
+									</a>
+                                </div>
+                            </div>
+							<!-- Project Card 3-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+									<a class="card-a" href="https://github.com/minimalU/2023_MobileApplicationDevelopment" target="_blank">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Party Planner</h2>
+											<p>Android Mobile Application<br>- Java, SQLite, Android Studio -<br>Party Planner is a feature-rich Android app developed as part of a mobile application development course. The app empowers users to conveniently schedule and efficiently manage parties. Leveraging a variety of advanced components such as Widgets, Notifications, Broadcasts, AsyncTasks, Content Providers, SQLite, and Services, Party Planner offers a comprehensive and seamless experience.</p>
+                                        </div>
+                                        <img class="prj-img" src="images/mobile.jpg" alt="mobile" />
+                                    </div>
+									</a>
+                                </div>
+                            </div>
+							<!-- Project Card 4-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+									<a class="card-a" href="https://github.com/minimalU/TransportationManagementSystem" target="_blank">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Transportation Management System</h2>
+											<p>Windows Application<br>- C#, WPF -<br>TMS is a software solution for the logistics industry. It provides organizations with the ability to efficiently purchase, schedule, monitor, and bill their cargo shipments. MySQL powers the system's backend database. The development language used for TMS is C#.</p>
+                                        </div>
+                                        <img class="prj-img" src="images/tms.jpg" alt="tms" />
+                                    </div>
+									</a>
+                                </div>
+                            </div>
+							<!-- Project Card 5-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0">
+                                <div class="card-body p-0">
+									<a class="card-a" href="https://card-match-2420e.firebaseapp.com/" target="_blank">
+                                    <div class="d-flex align-items-center">
+                                        <div class="p-5">
+                                            <h2 class="fw-bolder">Match Game</h2>
+											<p>React Practice Project<br>- React, Firebase -<br>The Match Game is developed as a React practice project. A deck of cards are randomly shuffled and concealed. User can flip two cards at a time. The challenge lies in requiring players to exercise their memory to uncover matching card pairs.The game is hosted on Firebase.</p>
+                                        </div>
+                                        <img class="prj-img" src="images/cardgame.jpg" alt="cardmatch" />
+                                    </div>
+									</a>
+                                </div>
+                            </div>
 
-			</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- About Section-->
+            <section id="about" class="py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-xxl-8">
+                            <div class="text-center my-5">
+                                <h2 class="display-5 fw-bolder mb-4"><span class="text-gradient d-inline">About Me</span></h2>
+								<img class="img-fluid mb-4" src="images/aboutMe.jpg" alt="aboutme" />
+                                <p class="lead fs- mb-4">Hello! I'm Kate (Yujung) Park.<br/> A passionate and dedicated Software Engineering Technology student at Conestoga College.</p>
+								<p class="text-muted">I have always been fascinated by the world of technology and its ability to transform lives. I discovered the joy of creating software and solving real-world problems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-		<!-- Main -->
-			<div id="main">
 
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<div class="container">
-
-							<header>
-								<h2 class="alt">Hi! I'm <strong>Yujung</strong>, </h2>
-								<p>Aspiring Software Development Engineer <br />
-									Software Engineering Technology Student at the Conestoga College.</p>
-							</header>
-
+			<!-- Contact -->
+			<section id="contact" class="py-5 p-5">
+				<div class="container px-5">
+					<div class="rounded-4 py-5 px-5 px-md-5">
+						<div class="text-center mb-5">
+							<!-- <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div> -->
+							<h1 class="display-5 fw-bolder text-gradient">Get in touch</h1>
 						</div>
-					</section>
+					
+					<div class="row gx-5 justify-content-center">
+						<div class="col-lg-8 col-xl-6">
 
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Portfolio</h2>
-							</header>
-
-							<p>Recent Projects</p>
-
-							<div class="row">
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/minimalU/2023SmartCityHackathon" target="_blank" class="image fit"><img src="images/prescriptxn.jpg" alt="oop" /></a>
-										<header>
-											<h3>Web Application</br>
-												2023 Smart Cities Hackathon - Smart Health Finalist </br>
-											    Python, Flask, mySQL, openAI API, JavaScript
-											</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://github.com/minimalU/TransportationManagementSystem" target="_blank" class="image fit"><img src="images/tms.jpg" alt="TMS" /></a>
-										<header>
-											<h3>Windows Application</br>
-											    C#, .NET, mySQL</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="https://github.com/minimalU/2023_MobileApplicationDevelopment" target="_blank" class="image fit"><img src="images/android.jpg" alt="mobile" /></a>
-										<header>
-											<h3> Mobile Application </br>
-												Java, SQLite
-											</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://card-match-2420e.firebaseapp.com/" target="_blank" class="image fit"><img src="images/cardgame.jpg" alt="cardgame" /></a>
-										<header>
-											<h3>Match Game</br>
-												React, Firebase
-											</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-
-									<!-- <article class="item">
-										<a href="https://github.com/minimalU/2022_ObjectOrientedProgramming" target="_blank" class="image fit"><img src="images/oop.jpg" alt="oop" /></a>
-										<header>
-											<h3>C++ OOP</br>
-											    Inheritance, Polymorphism, Overloading operators
-											</h3>
-										</header>
-									</article> -->
-									<article class="item">
-										<a href="TheParks/TheParksIndex.html" target="_blank" class="image fit"><img src="images/thumb1.jpg" alt="TheParks" /></a>
-										<header>
-											<h3>Responsive Web Design </br> 
-												HTML, CSS, Bootstrap</h3>
-										</header>
-									</article>
-
-									<article class="item">
-										<a href="https://github.com/minimalU/2022_WebDevelopment" class="image fit"><img src="images/wdd.jpg" alt="wdd" /></a>
-										<header>
-											<h3>Web Development</br>
-												JavaScript, PHP, jQuery, JSON, Ajax, IIS
-											</h3>
-										</header>
-									</article>
-
-								</div>
+					<form target="_blank" action="https://formsubmit.co/yujungpark@outlook.com" method="POST">
+							<!-- Name input-->
+							<div class="form-floating mb-3">
+								<input class="form-control" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+								<label for="name">Full name</label>
+								<div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+							</div>
+							<!-- Email address input-->
+							<div class="form-floating mb-3">
+								<input class="form-control" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+								<label for="email">Email address</label>
+								<div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+								<div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+							</div>
+							<!-- Message input-->
+							<div class="form-floating mb-3">
+								<textarea class="form-control" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+								<label for="message">Message</label>
+								<div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
 							</div>
 
+							<!-- Submit Button-->
+							<div class="d-grid"> 
+								<button class="btn btn-primary btn-lg" id="submitButton" type="submit">Send</button>
+							</div>
+					</form>
+
+							</div>
 						</div>
-					</section>
+					</div>
+				</div>
+			</section>
 
-				<!-- About Me -->
-					<section id="about" class="three">
-						<div class="container">
+			<!-- Call to action section-->
+			<section class="py-3 bg-gradient-primary-to-secondary text-white">
+				<div class="container px-3 my-5">
+					<div class="text-center">
+						<h2 class="display-4 fw-bolder">Transforming curiosity into code</h2>
+						<!-- <a class="btn btn-outline-light btn-lg px-5 py-3 fs-6 fw-bolder" href="contact.html">Contact me</a> -->
+					</div>
+				</div>
+			</section>      
+		
+		</main>
+        <!-- Footer-->
+        <footer class="py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0">Copyright &copy; KATE PARK 2023</div></div>	
+					<div class="col-auto">
+						<a href="#!"><i class="text-muted bi bi-linkedin"></i></a>
+						<a href="https://github.com/minimalU"><i class="text-muted bi bi-github"></i></a>
+					</div>
 
-							<header>
-								<h2>About Me</h2>
-							</header>
-
-							<a href="#" class="image featured"><img src="images/aboutMe.jpg" alt="" /></a>
-
-							<p>Software Engineering Student at Conestoga College, Waterloo, ON. Actively seeking internships!</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-							<!-- <p></p> -->
-							<form target = "_blank" action="https://formsubmit.co/yujungpark@outlook.com" method="POST">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
-
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<div id="footer">
-
-				<!-- Copyright -->
-					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: HTML5 UP</li><li>Edited by Yujung Park</li>
-					</ul>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+                    <!-- <div class="col-auto">
+                        <a class="small" href="#!">Privacy</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Terms</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="#!">Contact</a>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
